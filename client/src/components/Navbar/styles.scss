@@ -1,0 +1,64 @@
+.link {
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&:hover {
+		color: #2c2d32;
+	}
+
+	.link-info {
+		display: flex;
+		align-items: center;
+		column-gap: 2rem;
+
+		div {
+			width: 3rem;
+			height: 3rem;
+			background-color: #edf0f3;
+			border-radius: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.icon {
+				font-size: 1.875rem;
+				color: #8394a1;
+			}
+		}
+	}
+
+	.link-circle {
+		span {
+			display: inline-block;
+			width: 0.8rem;
+			height: 0.8rem;
+			background-color: #5077f9;
+			border-radius: 50%;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+
+.link-active {
+	color: #2c2d32;
+
+	.link-info {
+		div {
+			background-color: #5077f9;
+
+			.icon {
+				color: #fff;
+			}
+		}
+	}
+
+	.link-circle {
+		span {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
