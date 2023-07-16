@@ -45,11 +45,8 @@ export const Navbar: React.FC = () => {
 		}
 	}, [])
 
-	const navLinkDefaultStyles =
-		'font-bold flex items-center space-x-8 hover:text-[#2C2D32]'
-
 	return (
-		<div className='navbar text-[#8394A1] flex flex-col'>
+		<div className='navbar text-[#8394A1] flex flex-col p-10'>
 			<div className='mb-20'>
 				<img
 					src={img}
@@ -64,7 +61,7 @@ export const Navbar: React.FC = () => {
 				</div>
 			</div>
 			<div className='mb-24 flex-1'>
-				<ul className='flex flex-col space-y-12'>
+				<ul className='flex flex-col space-y-14'>
 					<li>
 						<NavLink
 							to='/'
@@ -110,7 +107,7 @@ export const Navbar: React.FC = () => {
 						>
 							<div className='link-info'>
 								<div>
-									<RiUserFill className='icon' />
+									<RiBuildingFill className='icon' />
 								</div>
 								<span>Business</span>
 							</div>
@@ -128,7 +125,7 @@ export const Navbar: React.FC = () => {
 						>
 							<div className='link-info'>
 								<div>
-									<RiUserFill className='icon' />
+									<RiMovieFill className='icon' />
 								</div>
 								<span>Entertainment</span>
 							</div>
@@ -146,7 +143,7 @@ export const Navbar: React.FC = () => {
 						>
 							<div className='link-info'>
 								<div>
-									<RiUserFill className='icon' />
+									<RiFootballFill className='icon' />
 								</div>
 								<span>Sport</span>
 							</div>

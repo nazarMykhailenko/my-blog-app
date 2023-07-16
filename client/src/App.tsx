@@ -7,7 +7,7 @@ import './App.scss'
 
 export const App: React.FC = () => {
 	return (
-		<div className='wrapper p-10'>
+		<div className='wrapper'>
 			<Navbar />
 			<Header />
 			<Routes>
